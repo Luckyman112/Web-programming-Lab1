@@ -43,12 +43,14 @@ document.querySelector('form').addEventListener('submit', function (event) {
   alert('Thank you! Your message has been sent.');
 });
 
-window.addEventListener('scroll', function () {
+function revealCards() {
   document.querySelectorAll('.w3-third').forEach(function (card, index) {
     if (card.getBoundingClientRect().top < window.innerHeight * 0.8) {
-      card.style.transform = 'translateY(0)';
-      card.style.opacity = '1';
-      card.style.transition = 'all 0.5s ease ' + index * 0.2 + 's';
+      card.style.transition = 'all 0.5s ease ' + (index % 3) * 0.2 + 's';
+      card.classList.add('visible');
     }
   });
-});
+}
+
+window.addEventListener('scroll', revealCards);
+window.addEventListener('load', revealCards);
