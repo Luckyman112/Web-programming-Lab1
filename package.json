@@ -1,14 +1,11 @@
 {
-  "name": "wp-lab1-band-site",
-  "private": true,
+  "name": "node-lab-website",
   "version": "1.0.0",
-  "type": "module",
+  "description": "",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "start": "node server.js"
   },
-  "devDependencies": {
-    "vite": "^5.4.10"
+  "dependencies": {
+    "express": "^4.21.2"
   }
 }

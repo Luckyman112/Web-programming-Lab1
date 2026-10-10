@@ -1,0 +1,54 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.mySlides {
+  display: none;
+}
+
+.custom-paragraph {
+  line-height: 1.8;
+  color: #333;
+  letter-spacing: 0.02em;
+}
+
+.custom-list li {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.member-photo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-btn {
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.ticket-btn:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+img {
+  border-radius: 4px;
+}
+
+.w3-container {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
